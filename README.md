@@ -1,4 +1,4 @@
-# **Introduction** #
+# **Analysis and Exploration of food recipes and online interactions** #
 
 
 The two data sets "RAW_recipes.csv" (size: 83782 rows by 12 columns) and "RAW_interactions.csv" (size:731927 by 5 columns) were combined into one data frame (Initial size: 234429 rows by 19 columns) for the analysis and exploration seen below. "RAW_recipes" is a data frame that contains various information about recipes on food.com (e.g number of steps, ingredients, nutrition facts, etc.), while interaction hold information regarding user interaction with these recipes on the website(e.g reviews, user rating, comments etc).
@@ -19,5 +19,9 @@ The first step in the cleaning and EDA process was combining the two datasets pr
 | 412 broccoli casserole               | 306168 |         6 | since there are already 411 recipes for broccoli casserole posted to "zaar" ,i decided to call this one  #412 broccoli casserole.i don't think there are any like this one in the database. i based this one on the famous "green bean casserole" from campbell's soup. but i think mine is better since i don't like cream of mushroom soup.submitted to "zaar" on may 28th,2008 |        5 |            5 | True                 | False                 | True              |
 | 412 broccoli casserole               | 306168 |         6 | since there are already 411 recipes for broccoli casserole posted to "zaar" ,i decided to call this one  #412 broccoli casserole.i don't think there are any like this one in the database. i based this one on the famous "green bean casserole" from campbell's soup. but i think mine is better since i don't like cream of mushroom soup.submitted to "zaar" on may 28th,2008 |        5 |            5 | True                 | False                 | True              |                                                                                                      
 
-# below this line should be a histogram *this is a test*
+# below this line should be a histogram showing the univariate analysis
 <iframe src="Assets/Univariate_graph.html" width=800 height=600 frameBorder=0></iframe>
+
+
+# below this line shoudl be a scatter plot showing the bivariate analysis
+<iframe src="Assets/Bivariate_graph.html" width=800 height=600 frameBorder=0></iframe>
