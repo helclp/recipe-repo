@@ -26,16 +26,18 @@ The histogram above shows the distrubtion of how many steps 1 star recipes have 
 # **Bivariate analysis scatterplot** # 
 <iframe src="Assets/Bivariate_graph.html" width=800 height=600 frameBorder=0></iframe>
 
-include 1-2 sentneces hre explaining the bivariate graph 
+The scatter plot above shows the relationship between average rating and number of steps. There seems to be a weak slighlty positive correlation between the two variables aprox 0.3. 
 
 
 # **Interesting Aggregates** #
-the rows are whether or not the recipe has a null average rating and the columns are if the recipe has more than one rating. 
+
 
 |     False |       True |
 |----------:|-----------:|
 | 0.940668  | 0.998367   |
 | 0.0593324 | 0.00163268 |
+
+The table above shows the distribution of recipes that have or do not have more than 1 rating with recipes that have or do not have a null average rating. This table shows that 99.8% of recipes that have more than 1 rating do not have a null average rating meanwhile only 94.1% of recipes with 1 rating do not have a null average rating. This suggests that most recipes from the data set that have no rating only have 1 review, had this not been accounted for in the cleaning these recipes would have been stored as 0 greatly affecting the analysis. 
 
 # **Assesment of Missingness** #
 
