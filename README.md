@@ -21,7 +21,7 @@ The first step in the cleaning and EDA process was combining the two datasets pr
 # **Univariate analysis Histogram** #
 <iframe src="Assets/Univariate_graph.html" width=800 height=600 frameBorder=0></iframe>
 
-include 1-2 sentences here explaining the univarite graph meaning
+The histogram above shows the distrubtion of how many steps 1 star recipes have (red) compared to 5 star recipes (blue). At first glance the distributions seem to be similar however there is alot more 5 star enteries(99924) than 1 star (697), due to the small sample size it is tough to say whether one is very different than another. Average steps for 1 star is 10.49 while avgerage steps for 5 star is 10.16.
 
 # **Bivariate analysis scatterplot** # 
 <iframe src="Assets/Bivariate_graph.html" width=800 height=600 frameBorder=0></iframe>
@@ -38,6 +38,7 @@ the rows are whether or not the recipe has a null average rating and the columns
 | 0.0593324 | 0.00163268 |
 
 # **Assesment of Missingness** #
+
 
 # **NMAR (No Missing At Random) Analyisis**
 
