@@ -14,45 +14,9 @@ The first step in the cleaning and EDA process was combining the two datasets pr
 ```
 py
 ```
-0.71
 
 
 
-
-
-mean	count
-avg_rating		
-1.0	10.487805	697
-5.0	10.157300	99924
-/var/folders/r5/2sl72ww95j7cbgqgy8ft6q6h0000gn/T/ipykernel_40693/3772670836.py:11: DeprecationWarning:
-
-The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
-
-name                       1
-id                         0
-minutes                    0
-contributor_id             0
-submitted                  0
-tags                       0
-nutrition                  0
-n_steps                    0
-steps                      0
-description              114
-ingredients                0
-n_ingredients              0
-user_id                    1
-date                       1
-rating                 15036
-avg_rating              2777
-more_than_1_rating         0
-has_null_avg_rating        0
-has_description            0
-dtype: int64
-more_than_1_rating	False	True
-has_null_avg_rating		
-False	0.940668	0.998367
-True	0.059332	0.001633
-1.0
 name	id	minutes	contributor_id	submitted	tags	nutrition	n_steps	steps	description	ingredients	n_ingredients	user_id	date	rating	avg_rating	more_than_1_rating	has_null_avg_rating	has_description
 0	1 brownies in the world best ever	333281	40	985201	2008-10-27	['60-minutes-or-less', 'time-to-make', 'course...	[138.4, 10.0, 50.0, 3.0, 3.0, 19.0, 6.0]	10	['heat the oven to 350f and arrange the rack i...	these are the most; chocolatey, moist, rich, d...	['bittersweet chocolate', 'unsalted butter', '...	9	386585.0	2008-11-19	4.0	4.0	False	False	True
 1	1 in canada chocolate chip cookies	453467	45	1848091	2011-04-11	['60-minutes-or-less', 'time-to-make', 'cuisin...	[595.1, 46.0, 211.0, 22.0, 13.0, 51.0, 26.0]	12	['pre-heat oven the 350 degrees f', 'in a mixi...	this is the recipe that we use at my school ca...	['white sugar', 'brown sugar', 'salt', 'margar...	11	424680.0	2012-01-26	5.0	5.0	False	False	True
