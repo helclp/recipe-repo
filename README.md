@@ -30,6 +30,12 @@ include 1-2 sentneces hre explaining the bivariate graph
 
 
 # **Interesting Aggregates** #
+the rows are whether or not the recipe has a null average rating and the columns are if the recipe has more than one rating. 
+
+|     False |       True |
+|----------:|-----------:|
+| 0.940668  | 0.998367   |
+| 0.0593324 | 0.00163268 |
 
 # **Assesment of Missingness** #
 
