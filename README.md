@@ -47,7 +47,7 @@ One columne that I belive that is not missing at random aka NMAR, is description
 
 # **Missingness dependency** #
 
-<iframe src="Assets/misss_dep1.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="Assets/miss_dep1.html" width=800 height=600 frameBorder=0></iframe>
 
 The above histogram shows a distrubtion of the total variation distance (TVD) of 500 simulations between shuffled values of null avgerage ratings. The red line is the observed TVD, this shows that we can reject the null and recognize that there is some sort of relationship or dependency between null average rating and recipes with 1 rating. These columns are filled with boolean values which reflect properities for each row and were used for sake of clarity and simplifying calculations. 
 
