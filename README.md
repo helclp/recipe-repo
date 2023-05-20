@@ -49,11 +49,11 @@ One columne that I belive that is not missing at random aka NMAR, is description
 
 <iframe src="Assets/miss_dep1.html" width=800 height=600 frameBorder=0></iframe>
 
-The above histogram shows a distrubtion of the total variation distance (TVD) of 500 simulations between shuffled values of null avgerage ratings. The red line is the observed TVD, this shows that we can reject the null and recognize that there is some sort of relationship or dependency between null average rating and recipes with 1 rating. These columns are filled with boolean values which reflect properities for each row and were used for sake of clarity and simplifying calculations. 
+The above histogram shows a distrubtion of the total variation distance (TVD) of 500 simulations between shuffled values of null avgerage ratings. The red line is the observed TVD, this shows that we can reject the null and recognize that there is some sort of relationship or dependency between null average rating and recipes with 1 rating. These columns are filled with boolean values which reflect properities for each row and were used for sake of clarity and simplifying calculations. The above red line is a plot of the p-value which in this case was 1.0 suggesting our observed value as or more extreme than 100% of the simulated values. 
 
 
 # **Hypothesis testing** # 
 
 <iframe src="Assets/hyp_test1.html" width=800 height=600 frameBorder=0></iframe>
 
-The histogram above shows 500 simulation of shuffled avg rating and the resulting total variation distance TVD between the 1 star and 5 star categories. From this hypothesis test we fail to reject the null. The graph above had a p-value of 
+The histogram above shows 500 simulation of shuffled avg rating and the resulting total variation distance TVD between the 1 star and 5 star categories. From this hypothesis test we fail to reject the null. The graph above had a p-value of about 0.2 suggesting that only 20% of the simulated TVD's were as extreme as our observed value, from this we fail to reject the null hypothesis. 
