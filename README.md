@@ -42,11 +42,18 @@ The table above shows the distribution of recipes that have or do not have more 
 # **Assesment of Missingness:** #
 
 
-# **NMAR (No Missing At Random) Analyisis**
+# **NMAR (Not Missing At Random) Analyisis**
 One columne that I belive that is not missing at random aka NMAR, is description. While working with this data set I noticed that some recipes had interesting attributes such as 0 steps, and reviews that did not have words such as "...". If I were to gather more data, especially the raw data I would investigate if there are certain, words, symbols, net length, or various other requirements that could lead to a desription being stored as null. 
+
 # **Missingness dependency** #
 
 <iframe src="Assets/misss_dep1.html" width=800 height=600 frameBorder=0></iframe>
 
 The above histogram shows a distrubtion of the total variation distance (TVD) of 500 simulations between shuffled values of null avgerage ratings. The red line is the observed TVD, this shows that we can reject the null and recognize that there is some sort of relationship or dependency between null average rating and recipes with 1 rating. These columns are filled with boolean values which reflect properities for each row and were used for sake of clarity and simplifying calculations. 
+
+
 # **Hypothesis testing** # 
+
+<iframe src="Assets/hyp_test1.html" width=800 height=600 frameBorder=0></iframe>
+
+The histogram above shows 500 simulation of shuffled avg rating and the resulting total variation distance TVD between the 1 star and 5 star categories. From this hypothesis test we fail to reject the null. The graph above had a p-value of 
