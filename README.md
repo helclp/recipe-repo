@@ -1,12 +1,12 @@
 # **Analysis and Exploration of food recipes and online interactions** #
 
-**Introduction**
+**Introduction:**
 The two data sets "RAW_recipes.csv" (size: 83782 rows by 12 columns) and "RAW_interactions.csv" (size:731927 by 5 columns) were combined into one data frame (Initial size: 234429 rows by 19 columns) for the analysis and exploration seen below. "RAW_recipes" is a data frame that contains various information about recipes on food.com (e.g number of steps, ingredients, nutrition facts, etc.), while interaction hold information regarding user interaction with these recipes on the website(e.g reviews, user rating, comments etc).
 
 The main question explored in this endeavor is: *Do recipes with a 1-star average rating have a different distribution of the number of steps in the recipe than 5-star average recipes?*
 
 
-# **Cleaning and EDA (Exploratory Data Analysis)** #
+# **Cleaning and EDA (Exploratory Data Analysis):** #
 The first step in the cleaning and EDA process was combining the two datasets provided. Since the enteries in recipes are unique, a left merge was conducted so that each row from the interactions data frame corresponded to a recipe from the recipes data frame, allowing multiple rows with the same recipe but differing in their interaction information since interactions are with respect to a recipe. These data frames both have a shared column called "id" in recipes and "recipe_id" in interaction which have shared values corresponding to the same recipe, these columns were used for the merge. The second step in this section, was converting ratings stord as 0-stars to null values. This was done because on the website users are allowed to leave comments and reviews without giving a star rating, the csv filed stored these types of interactions with a 0. This was important to change, because these 0 start rating would drastically affect the average during statistcal analysis later one. Once these 0 values were converted to null values, the average score for each recipe was computed based off of the user ratings (null values are not factored into this mean calculation thus giving an accurate result). After completing these steps the columns 'more_than_1_rating', 'has_null_avg_rating', and 'has_description' were added to the data frame. The aformentioned mention columns all store True or False values which are later used to asses missingness and simply computations for statistically analysis. Lastly the columns 'recipe_id' and 'review' were dropped since 'recipe_id' is a duplicate of 'id' and the 'review' column was not needed for the types of analysis later conducted.
 
 
@@ -37,13 +37,16 @@ The scatter plot above shows the relationship between average rating and number 
 | 0.940668  | 0.998367   |
 | 0.0593324 | 0.00163268 |
 
-The table above shows the distribution of recipes that have or do not have more than 1 rating with recipes that have or do not have a null average rating. This table shows that 99.8% of recipes that have more than 1 rating do not have a null average rating meanwhile only 94.1% of recipes with 1 rating do not have a null average rating. This suggests that most recipes from the data set that have no rating only have 1 review, had this not been accounted for in the cleaning these recipes would have been stored as 0 greatly affecting the analysis. 
+The table above shows the distribution of recipes that have or do not have more than 1 rating with recipes that have or do not have a null average rating. This table shows that 99.8% of recipes that have more than 1 rating do not have a null average rating meanwhile only 94.1% of recipes with 1 rating do not have a null average rating. This suggests that most recipes from the data set that have no rating only have 1 review, had this not been accounted for in the cleaning these recipes would have been stored as 0 greatly affecting the analysis. I found this aggregation to be interesting, thus I explored it further later on.  
 
-# **Assesment of Missingness** #
+# **Assesment of Missingness:** #
 
 
 # **NMAR (No Missing At Random) Analyisis**
+One columne that I belive that is not missing at random aka NMAR is description. While working with this data set I noticed that some recipes had interesting attributes such as 0 steps, and reviews that did not have words such as "...". If I were to gather more data I would test whether there is any relationship between missing descriptions and these other aformentioned columns in an effort to determine the missingess making it MAR or another type. 
 
 # **Missingness dependency** #
+
+<iframe src="Assets/missingness_dep.html" width=800 height=600 frameBorder=0></iframe>
 
 # **Hypothesis testing** # 
