@@ -54,6 +54,10 @@ The above histogram shows a distrubtion of the total variation distance (TVD) of
 
 # **Hypothesis testing** # 
 
+Null hypothesis: The distributions of avg ratings between 1 and 5 star recipes are not different
+
+Alternate hypothesis: 5 star recipes tend to have more steps in their recipes than 1 star recipes
+
 <iframe src="Assets/hyp_test1.html" width=800 height=600 frameBorder=0></iframe>
 
 The histogram above shows 500 simulation of shuffled avg rating and the resulting total variation distance TVD between the 1 star and 5 star categories. From this hypothesis test we fail to reject the null. The graph above had a p-value of about 0.2 suggesting that only 20% of the simulated TVD's were as extreme as our observed value, from this we fail to reject the null hypothesis. 
